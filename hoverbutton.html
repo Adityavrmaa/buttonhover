@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>button hover</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html{
+        font-size: 2rem;
+      }
+       .main_hover{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(248, 234, 238);
+        display: grid;
+        place-items: center;
+       }
+     a{
+         background-color: cornflowerblue;
+         color: white;
+         padding: 1.6rem 3rem;
+         font-size: 1.6rem;
+         box-shadow: 0 10px  30px 1px rgb(104, 102, 102);
+         position: relative;
+         overflow: hidden;
+         
+     }
+     a:hover{
+         background-color: brown;
+         color: rgb(85, 255, 255);
+         text-decoration: none;
+         transition: all 0.5s;
+     }
+      a::before{
+          content: '';
+          width: 100%;
+          height: 40%;
+          background-color: white;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          transform:  translateX(-100%)   rotate(50deg);
+          transition: all 0.5s;
+      }
+      a:hover::before{
+        transform:  translateX(100%)   rotate(50deg);
+      }
+
+
+
+
+
+      
+    </style>
+  </head>
+  <body>
+   <div class="container main_hover">
+    <a href="">Aditya verma</a>
+
+
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
